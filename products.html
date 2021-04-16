@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tjc5hdi.css">
+    
+    <title>Document</title>
+</head>
+
+
+<body onload="filterSelection('all')">
+
+   
+ <!-- navbar -->
+
+ <nav class="navbar navbar-expand-lg navbar-light">
+  
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   
+   <img class="logo_mob_nav" src="image/logo.jpg" alt="">
+
+   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+     <ul class="navbar-nav nav">
+       <li class="nav-item nav_text ">
+         <a class="nav-link nav_text" href="index.html">Home </a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="products.html">Products</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="logo.html">Cafe</a>
+        </li>
+        <li>
+           <img class="logo" src="image/logo.jpg" alt="">
+        </li>
+       <li class="nav-item">
+         <a class="nav-link" href="about.html">About</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="contact.html">Contact</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="recipies.html">Recipies</a>
+        </li>
+     </ul>
+   </div>
+ </nav>
+
+<div class="products_img">
+   <img class="products_img" src="/image/cookies_product.jpg" alt="">
+   <div class="products_img_text">products</div>
+   <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('cake')"> Cakes</button>
+      <button class="btn" onclick="filterSelection('cup')"> Cupcakes</button>
+      <button class="btn" onclick="filterSelection('cookie')"> Cookies</button>
+      <button class="btn" onclick="filterSelection('donut')"> Donuts</button>
+    </div>
+</div>
+
+<!-- Control buttons -->
+<!-- <div id="myBtnContainer">
+   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+   <button class="btn" onclick="filterSelection('cake')"> Cakes</button>
+   <button class="btn" onclick="filterSelection('cup')"> Cupcakes</button>
+   <button class="btn" onclick="filterSelection('cookie')"> Cookies</button>
+   <button class="btn" onclick="filterSelection('donut')"> Donuts</button>
+ </div> -->
+ 
+
+<div class="product">
+   <div class="wrapper filterDiv cake">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/karly-gomez-rotFzR9lX0E-unsplash.jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cake</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv cake">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/karly-gomez-rotFzR9lX0E-unsplash.jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cake</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv cup">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/meritt-thomas-Ao09kk2ovB0-unsplash (2).jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cupcake</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv">
+      <div class="container_card cookie">
+      <div class="top"><img class="card_img" src="/image/debbie-widjaja-4zThEOr1VDE-unsplash (1).jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cookie</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv cake">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/karly-gomez-rotFzR9lX0E-unsplash.jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cake</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv cookie">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/debbie-widjaja-4zThEOr1VDE-unsplash (1).jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cookie</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv cup">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/meritt-thomas-Ao09kk2ovB0-unsplash (2).jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cupcake</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+
+   <div class="wrapper filterDiv cake">
+      <div class="container_card">
+      <div class="top"><img class="card_img" src="/image/karly-gomez-rotFzR9lX0E-unsplash.jpg" ></div>
+      <div class="bottom">
+      <div class="left">
+      <div class="details"><h3>Cake</h3></div>
+      <div class="buy"></div>
+      </div>
+      <div class="right"></div>
+      </div>
+      </div>
+
+      <div class="inside">
+      <div class="info">info</div>
+      <div class="contents"></div>
+      </div>
+   </div>
+    
+</div>
+
+
+<script src="/js/filters.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

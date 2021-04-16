@@ -1,0 +1,220 @@
+.products_img {
+  height: 400px;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.products_img_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: balboa-plus-fill, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+
+.wrapper {
+  width: 300px;
+  height: 400px;
+  background: white;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.wrapper:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container_card {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  height: 80%;
+  width: 100%;
+  background-color: #00394B;
+  background-size: 100%;
+}
+
+.card_img {
+  height: 100%;
+  width: 100%;
+}
+
+.bottom {
+  width: 0;
+  height: 20%;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: balboa-plus-fill,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+
+.details {
+  padding: 20px;
+  float: left;
+  width: 70%;
+}
+
+.done {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.inside {
+  z-index: 9;
+  background: #92879B;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  -webkit-transition: all 0.5s, border-radius 2s, top 1s;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+
+.inside:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+
+.contents {
+  padding: 5%;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.8s;
+  transition: opacity 0.2s, -webkit-transform 0.8s;
+  transition: opacity 0.2s, transform 0.8s;
+  transition: opacity 0.2s, transform 0.8s, -webkit-transform 0.8s;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.info {
+  position: relative;
+  text-align: right;
+  font-family: balboa-plus-fill,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#myBtnContainer {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#myBtnContainer_post {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.filterDiv {
+  float: left;
+  display: none;
+  /* Hidden by default */
+}
+
+.filter-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  border-bottom: 1px solid #E4D7D7;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.btn {
+  outline: none;
+  padding: 12px 16px;
+  background-color: #0c1950;
+  cursor: pointer;
+  font-family: balboa-plus-fill,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  color: #f5e1c9 !important;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 992px) {
+  .products_img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #myBtnContainer_post {
+    display: none;
+  }
+}
+/*# sourceMappingURL=product.css.map */

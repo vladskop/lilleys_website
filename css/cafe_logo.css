@@ -1,0 +1,466 @@
+.logo {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: solid 4px #f5e1c9;
+}
+
+.nav {
+  font-family: balboa-plus-fill,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  color: #f5e1c9;
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+}
+
+.nav-item {
+  padding: 20px;
+}
+
+ul li a:link {
+  color: #f5e1c9;
+}
+
+ul li a:visited {
+  color: #f5e1c9;
+}
+
+.nav:not(.logo) {
+  height: 100px;
+  background-color: #0c1950;
+  padding-bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.together {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_logo {
+  margin: auto;
+  width: 250px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.coaster {
+  width: 100%;
+  height: 6%;
+  background-color: #7c3c21;
+  border-radius: 10px;
+  position: relative;
+}
+
+.coaster::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #63301a;
+  position: absolute;
+  right: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.halfCup {
+  height: 30%;
+  width: 30%;
+  background-color: #457b9d;
+  position: absolute;
+  bottom: 21px;
+  left: 50px;
+  border-radius: 15px 0 0 60px;
+}
+
+.cup {
+  width: 60%;
+  height: 30%;
+  background-color: #1d3557;
+  border-radius: 15px 15px 60px 60px;
+  position: relative;
+}
+
+.handle {
+  height: 60px;
+  width: 40px;
+  border-radius: 0 50% 50% 0;
+  background-color: lightgray;
+  border: 10px solid #1d3557;
+  position: absolute;
+  right: 26px;
+  bottom: 40px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.steamContainer {
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.steam1, .steam2, .steam3, .steam4, .steam5 {
+  width: 20%;
+  height: 5%;
+  background-color: #ddb892;
+  border-radius: 10px;
+  -webkit-animation: steamFloating 1.5s infinite linear;
+          animation: steamFloating 1.5s infinite linear;
+}
+
+.steam1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.steam2 {
+  width: 30%;
+  height: 100%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  position: relative;
+  right: 50px;
+}
+
+.steam3 {
+  width: 50%;
+  height: 100%;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  position: relative;
+  left: 40px;
+}
+
+.steam4 {
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.steam5 {
+  width: 35%;
+  height: 100%;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  position: relative;
+  right: 20px;
+}
+
+.steams {
+  width: 200px;
+  height: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bubble2, .bubble3, .bubble5 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b08968;
+  -webkit-animation: bubbleFloating 1.5s infinite ease-in;
+          animation: bubbleFloating 1.5s infinite ease-in;
+  position: relative;
+}
+
+.bubble3 {
+  top: 15px;
+  right: 130px;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.bubble5 {
+  top: 5px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes steamFloating {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes steamFloating {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes bubbleFloating {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bubbleFloating {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.one {
+  -webkit-transform: translate(15px, 40px) rotate(-30deg);
+          transform: translate(15px, 40px) rotate(-30deg);
+}
+
+.two {
+  -webkit-transform: translate(10px, 25px) rotate(-25deg);
+          transform: translate(10px, 25px) rotate(-25deg);
+}
+
+.three {
+  -webkit-transform: translate(4px, 20px) rotate(-20deg);
+          transform: translate(4px, 20px) rotate(-20deg);
+}
+
+.four {
+  -webkit-transform: translate(3px, 15px) rotate(-15deg);
+          transform: translate(3px, 15px) rotate(-15deg);
+}
+
+.five {
+  -webkit-transform: translate(2px, 10px) rotate(-10deg);
+          transform: translate(2px, 10px) rotate(-10deg);
+}
+
+.six {
+  -webkit-transform: translate(1px, 5px) rotate(-5deg);
+          transform: translate(1px, 5px) rotate(-5deg);
+}
+
+.seven {
+  -webkit-transform: translate(-8px, 3px) rotate(0deg);
+          transform: translate(-8px, 3px) rotate(0deg);
+}
+
+.eight {
+  -webkit-transform: translate(-1px, 5px) rotate(5deg);
+          transform: translate(-1px, 5px) rotate(5deg);
+}
+
+.nine {
+  -webkit-transform: translate(-2px, 10px) rotate(10deg);
+          transform: translate(-2px, 10px) rotate(10deg);
+}
+
+.ten {
+  -webkit-transform: translate(-3px, 15px) rotate(15deg);
+          transform: translate(-3px, 15px) rotate(15deg);
+}
+
+.one1 {
+  -webkit-transform: translate(-4px, 20px) rotate(20deg);
+          transform: translate(-4px, 20px) rotate(20deg);
+}
+
+.two2 {
+  -webkit-transform: translate(-10px, 25px) rotate(25deg);
+          transform: translate(-10px, 25px) rotate(25deg);
+}
+
+.three3 {
+  -webkit-transform: translate(-15px, 40px) rotate(30deg);
+          transform: translate(-15px, 40px) rotate(30deg);
+}
+
+/* An inline-block element is placed as an inline
+ element (on the same line as adjacent content), 
+ but it behaves like a block element  */
+span {
+  display: inline-block;
+}
+
+#logoName {
+  text-align: center;
+  font-size: 40px;
+  color: #1d3557;
+  font-family: 'Pacifico', cursive;
+  display: block;
+  position: relative;
+}
+
+.container_logo, #logoName {
+  opacity: 0;
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+  -webkit-animation-duration: 450ms;
+          animation-duration: 450ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.container_logo {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#logoName {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.back_btn {
+  background-color: #0c1950;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: balboa-plus-fill,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.back_btn:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.goback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=cafe_logo.css.map */
